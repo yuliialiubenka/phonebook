@@ -93,7 +93,6 @@ export const refreshUser = createAsyncThunk(
     const persistedToken = state.auth.token;
 
     if (persistedToken === null) {
-      Notify.failure("Unable to fetch user.", paramsForNotify);
       // Error if the token is not saved in the state
       return thunkAPI.rejectWithValue('Unable to fetch user');
     }
