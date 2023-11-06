@@ -105,7 +105,6 @@ export const refreshUser = createAsyncThunk(
       // Returning data from the server response
       return res.data;
     } catch (error) {
-      Notify.failure("Missing header with authorization token.", paramsForNotify);
       // Error handling with the rejectWithValue call
       return thunkAPI.rejectWithValue(error.message);
     }
