@@ -34,6 +34,7 @@ export const useStyles = createUseStyles({
         justifyContent: "center",
         alignItems: "center",
         gap: 40,
+        zIndex: 1,
 
         "@media (max-width: 480px)": {
             top: 64,
